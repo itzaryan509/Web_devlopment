@@ -1,0 +1,124 @@
+/* Apply border-box to all elements */
+
+* {
+  box-sizing: border-box;
+  }
+
+body {
+margin: 0;
+font-family: Arial, sans-serif;
+background: #eeeeee;
+}
+
+/* Header */
+header {
+background: #222;
+color: white;
+padding: 20px;
+text-align: center;
+}
+
+/* Main section */
+main {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 50px 20px;
+}
+
+/* Main card */
+.card {
+width: 700px;
+display: flex;
+
+```
+background: white;
+border: 1px solid #ccc;
+border-radius: 15px;
+overflow: hidden;
+
+box-shadow: 0 5px 15px #aaa;
+```
+
+}
+
+/* Image */
+.card img {
+width: 45%;
+object-fit: cover;
+}
+
+/* Content */
+.content {
+padding: 30px;
+flex: 1;
+}
+
+/* Form */
+form {
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+input {
+padding: 12px;
+border: 1px solid #aaa;
+border-radius: 7px;
+}
+
+/* Focus effect */
+input:focus {
+outline: 3px solid blue;
+}
+
+/* Buttons */
+.buttons {
+display: flex;
+gap: 10px;
+}
+
+button {
+padding: 12px 20px;
+border: none;
+border-radius: 7px;
+background: blue;
+color: white;
+cursor: pointer;
+transition: 0.3s;
+}
+
+button:hover {
+transform: translateY(-2px);
+background: darkblue;
+}
+
+button:focus {
+outline: 3px solid orange;
+}
+
+/* Footer */
+footer {
+text-align: center;
+padding: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+
+```
+.card {
+    width: 100%;
+    flex-direction: column;
+}
+
+.card img {
+    width: 100%;
+}
+
+.buttons {
+    flex-direction: column;
+}
+```
+
+}
