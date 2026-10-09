@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      header {
+        height: 60px;
+        background: #222;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+      }
+
+      header a {
+        color: white;
+        text-decoration: none;
+        margin: 10px;
+      }
+
+      /* SIDEBAR */
+      .sidebar {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 200px;
+        height: 100%;
+        background: #222;
+        color: white;
+        padding: 20px;
+      }
+
+      .sidebar a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        margin: 20px 0;
+      }
+
+      /* MAIN CONTENT */
+      .main {
+        margin-left: 200px;
+        padding: 20px;
+      }
+
+      /* BOXES */
+      .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+      }
+
+      .box {
+        background: #ccc;
+        height: 150px;
+        padding: 10px;
+      }
+
+      /* RESPONSIVE */
+      @media (max-width: 700px) {
+        .container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h2>My Website</h2>
+
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Profile</a>
+      </nav>
+    </header>
+
+    <div class="sidebar">
+      <h2>×</h2>
+      <a href="#">Dashboard</a>
+      <a href="#">Courses</a>
+      <a href="#">Settings</a>
+      <a href="#">Logout</a>
+    </div>
+
+    <div class="main">
+      <h2>Welcome to Dashboard</h2>
+
+      <div class="container">
+        <div>
+          <div class="box"></div>
+          <h3>Video Title 1</h3>
+        </div>
+
+        <div>
+          <div class="box"></div>
+          <h3>Video Title 2</h3>
+        </div>
+
+        <div>
+          <div class="box"></div>
+          <h3>Video Title 3</h3>
+        </div>
+
+        <div>
+          <div class="box"></div>
+          <h3>Video Title 4</h3>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
