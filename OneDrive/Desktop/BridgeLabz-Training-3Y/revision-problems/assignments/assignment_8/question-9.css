@@ -1,0 +1,56 @@
+body {
+margin: 0;
+padding: 30px;
+font-family: Arial, sans-serif;
+background: #f2f2f2;
+}
+
+header {
+text-align: center;
+}
+
+.effects {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 30px;
+min-height: 400px;
+flex-wrap: wrap;
+}
+
+.effect-button {
+padding: 15px 30px;
+border: none;
+border-radius: 10px;
+background: blue;
+color: white;
+font-size: 16px;
+
+```
+box-shadow: 0 4px 8px #999;
+
+transition: all 0.3s ease;
+```
+
+}
+
+/* Hover + transformation */
+.effect-button:hover {
+background: purple;
+transform: scale(1.1);
+box-shadow: 0 8px 15px #777;
+}
+
+/* Active effect */
+.effect-button:active {
+transform: scale(0.95);
+}
+
+/* Focus effect */
+.effect-button:focus {
+outline: 3px solid orange;
+}
+
+footer {
+text-align: center;
+}
