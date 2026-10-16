@@ -1,3 +1,5 @@
+// initiliztion of array
+
 const array = [1, 2, true, "aryan"];
 array.push("60");
 array.pop();
