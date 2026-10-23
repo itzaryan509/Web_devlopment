@@ -1,1 +1,2 @@
-person1.address = "India";
+console.log("\n--- Empty Cart ---");
+displayCheckoutSummary(emptyCart);

@@ -43,3 +43,5 @@ const person1 = {
 };
 
 person1.showDetails();
+
+//anomynous function
